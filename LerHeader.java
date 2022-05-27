@@ -7,7 +7,7 @@ public class LerHeader {
     public static void main(String[] args) {
         String file = "TA_PRECO_MEDICAMENTO.csv";
         String headers;
-        String line;;
+        String line;
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             headers = br.readLine();
             while((line = br.readLine()) != null){
