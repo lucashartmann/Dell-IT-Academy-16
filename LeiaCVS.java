@@ -40,7 +40,7 @@ public static void menu() { // Menu de opções para o usuário
             sair();
             System.out.println();
             break;
-        default: //Caso usuário caracter inválido 
+        default: // Caso use um usuário caracter inválido 
             System.out.println("Você digitou uma opção inválida, por favor, digite um número de 1 a 4");
             menu();
             break;
@@ -75,7 +75,7 @@ public static void menu() { // Menu de opções para o usuário
         try {
 
             br = new BufferedReader(new FileReader(arquivoCSV)); //leitor do arquivoCSV
-            Scanner sc = new Scanner(System.in); //Usuário informa o nome da susbtancia
+            Scanner sc = new Scanner(System.in); //Usuário informa o nome da susbtância
                   System.out.println("\nDigite o nome do rémedio:\n");
                   nome = sc.nextLine();
                   
@@ -90,7 +90,7 @@ public static void menu() { // Menu de opções para o usuário
                  if(linha.contains(nome.toUpperCase()) &&  pais[pais.length -2].equals("Sim")) { 
                    System.out.println("\n"+linha);
                  }
-                //Ver se alguma linha do excel contém o nome digitado pelo usuário e se o produto é comercializado em 2020
+                // Ver se alguma linha do excel contém o nome digitado pelo usuário e se o produto é comercializado em 2020
                   
             }
 
